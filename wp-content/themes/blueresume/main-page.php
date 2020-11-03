@@ -8,12 +8,22 @@ Template Name: Main Page
     <header>
         <div class="top__line">
             <div class="top__line_left">
+                <?php
+                wp_nav_menu( [
+                    'theme_location'  => 'menu-1',
+                    'menu'            => 'Top left',
+                    'container'       => 'div',
+                    'container_class' => 'top__line_left-menu',
+                ] );
+                ?>
+                <!--
                 <div class="top__line_left-menu">
                     <ul>
-                        <li><a class="scroll-to" href="#Works">Works</a></li>
-                        <li><a class="scroll-to" href="#About">About</a></li>
+                        <li><a href="#Works">Works</a></li>
+                        <li><a href="#About">About</a></li>
                     </ul>
                 </div>
+                -->
             </div>
             <div class="top__line_center">
                 <?php if ( carbon_get_theme_option( 'logo_image' ) ) { ?>
@@ -23,24 +33,45 @@ Template Name: Main Page
                 <?php } ?>
             </div>
             <div class="top__line_right">
+                <?php
+                wp_nav_menu( [
+                    'theme_location'  => 'menu-2',
+                    'menu'            => 'Top right',
+                    'container'       => 'div',
+                    'container_class' => 'top__line_right-menu',
+                ] );
+                ?>
+                <!--
                 <div class="top__line_right-menu">
                     <ul>
-                        <li><a class="scroll-to" href="#Links">Links</a></li>
-                        <li><a class="scroll-to" href="#Contacts">Contacts</a></li>
+                        <li><a href="#Links">Links</a></li>
+                        <li><a href="#Contacts">Contacts</a></li>
                     </ul>
                 </div>
+                -->
             </div>
         </div>
     </header>
     <div id="button_mobile__menu" class="mobile__menu"></div>
+    <?php
+    wp_nav_menu( [
+        'theme_location'  => 'menu-3',
+        'menu'            => 'Mobile menu',
+        'container'       => 'div',
+        'container_class' => 'mobile__block',
+        'container_id'    => 'block_mobile__menu',
+    ] );
+    ?>
+    <!--
     <div id="block_mobile__menu" class="mobile__block">
         <ul>
-            <li><a class="scroll-to" href="#Works">Works</a></li>
-            <li><a class="scroll-to" href="#About">About</a></li>
-            <li><a class="scroll-to" href="#Links">Links</a></li>
-            <li><a class="scroll-to" href="#Contacts">Contacts</a></li>
+            <li><a href="#Works">Works</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Links">Links</a></li>
+            <li><a href="#Contacts">Contacts</a></li>
         </ul>
     </div>
+    -->
     <section>
 
         <?php if ( carbon_get_post_meta( get_the_ID(), 'main-slag' ) ) { ?>

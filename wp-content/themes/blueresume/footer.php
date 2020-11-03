@@ -34,26 +34,29 @@
             </div>
         </div>
         <div class="contact__form">
-            <form onsubmit="return validate();">
+            <?php echo do_shortcode('[contact-form-7 id="23" title="Контактная форма 2"]');?>
+            <!--
+            <form>
                 <div class="form-group-line">
                     <label class="form-label" for="in_name">Name</label>
                     <input type="text" class="form-input" id="in_name" placeholder="Incognito">
-                    <div class="form-error" id="in_name_error">Поле должно быть заполнено</div>
                 </div>
+
                 <div class="form-group-line">
                     <label class="form-label" for="in_email">E-mail</label>
                     <input type="email" class="form-input" id="in_email" placeholder="incognito@gmail.com">
-                    <div class="form-error" id="in_email_error">Вы неправильно ввели E-mail</div>
                 </div>
 
                 <div class="form-group-line">
                     <label class="form-label" for="message">Message</label>
                     <textarea class="form-input" id="message" rows="3" placeholder="Your question or suggestion"></textarea>
                 </div>
+
                 <button type="submit" class="button-form">
                     <span class="icon ed-tl"></span>
                 </button>
             </form>
+            -->
         </div>
     </div>
     <div class="copyright">
