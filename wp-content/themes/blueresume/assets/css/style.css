@@ -819,10 +819,6 @@ footer {
         max-width: 1000px
     }
 
-    .about__head, .links__head, .works__head {
-        left: -60px
-    }
-
     .top__line_left-menu ul li {
         margin-right: 57px
     }
@@ -843,10 +839,6 @@ footer {
 
     .top__line_right-menu ul li {
         margin-left: 35px
-    }
-
-    .about__head, .links__head, .works__head {
-        left: -60px
     }
 
     .copyright__text {
@@ -881,10 +873,6 @@ footer {
 
     .top__line_right-menu ul li:first-child {
         margin-left: 0
-    }
-
-    .about__head, .links__head, .works__head {
-        left: -45px
     }
 
     .copyright__text {

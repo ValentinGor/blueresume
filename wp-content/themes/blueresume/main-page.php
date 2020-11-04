@@ -73,6 +73,7 @@ Template Name: Main Page
         </ul>
     </div>
     -->
+
     <section>
 
         <?php if (carbon_get_post_meta(get_the_ID(), 'main-slag')) { ?>
