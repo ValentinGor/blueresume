@@ -26,3 +26,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	position: relative;
 	width: 100%;
 }
+
+.wpcf7-not-valid-tip {
+	position: absolute;
+	top: 48px;
+	font-size: 12px;
+}

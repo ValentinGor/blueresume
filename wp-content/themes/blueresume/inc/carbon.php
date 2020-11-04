@@ -23,4 +23,22 @@ function crb_attach_theme_options() {
             Field::make( 'text', 'main-slag', __( 'Заголовок страницы', 'blueresume' ) )
                 ->set_required( true ),
         ) );
+
+    Container::make( 'post_meta', 'page-article', __( 'Содержимое поста', 'blueresume' ) )
+        ->where( 'post_type', '=', 'post' )
+        ->where( 'post_template', '=', 'page-article.php' )
+        ->add_fields( array(
+            Field::make( 'image', 'article_image', __( 'Картинка статьи', 'blueresume' ) )
+                ->set_value_type( 'url' ),
+            Field::make( 'rich_text', 'article_text', __( 'Текст статьи', 'blueresume' ) ),
+
+            Field::make( 'complex', 'article_table', __( 'Таблица технологий', 'blueresume' ) )
+                ->add_fields( array(
+
+                    Field::make( 'text', 'article_table_head', __( 'Название технологии', 'blueresume' ) )
+                        ->set_required( true ),
+                    Field::make( 'text', 'article_table_text', __( 'Описание технологии', 'blueresume' ) )
+                        ->set_required( true ),
+                ) ),
+        ) );
 }
