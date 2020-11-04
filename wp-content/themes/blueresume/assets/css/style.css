@@ -11,8 +11,6 @@ h2 {
     letter-spacing: 3px;
     text-transform: uppercase;
     color: #979797;
-    transform: rotate(-90deg);
-    text-align: right
 }
 
 h3 {
@@ -359,9 +357,7 @@ span.line-1.active, span.line-2.active, span.line-3.active, span.line-4.active, 
 
 .works__head {
     position: absolute;
-    top: 10px;
-    left: -100px;
-    width: 62px
+    top: -45px;
 }
 
 .project {
@@ -374,7 +370,7 @@ span.line-1.active, span.line-2.active, span.line-3.active, span.line-4.active, 
 
 .project__links {
     margin-left: 60px;
-    margin-bottom: 20px
+    margin-bottom: 50px;
 }
 
 .project__links a {
@@ -417,9 +413,7 @@ span.line-1.active, span.line-2.active, span.line-3.active, span.line-4.active, 
 
 .about__head {
     position: absolute;
-    top: 45px;
-    left: -100px;
-    width: 62px
+    top: -30px;
 }
 
 .about__info {
@@ -449,9 +443,7 @@ span.line-1.active, span.line-2.active, span.line-3.active, span.line-4.active, 
 
 .links__head {
     position: absolute;
-    top: 20px;
-    left: -100px;
-    width: 62px
+    top: -45px;
 }
 
 .links__info {

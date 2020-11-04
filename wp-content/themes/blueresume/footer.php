@@ -83,7 +83,10 @@
     </div>
 </div>
 <div class="to__top">
-    <img src="<?php echo get_template_directory_uri();?>/assets/img/top.svg" alt="img">
+    <div class="menu-item"><a href="#Top">
+            <img src="<?php echo get_template_directory_uri();?>/assets/img/top.svg" alt="img">
+        </a>
+    </div>
 </div>
 
 <?php wp_footer(); ?>
