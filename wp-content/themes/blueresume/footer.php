@@ -18,23 +18,23 @@
             <h2>Contacts</h2>
         </div>
         <div class="contact__info">
-            <?php if ( carbon_get_theme_option( 'footer_text' ) ) { ?>
+            <?php if (carbon_get_theme_option('footer_text')) { ?>
                 <div class="contact__info_text">
-                    <?php echo carbon_get_theme_option( 'footer_text' ); ?>
+                    <?php echo carbon_get_theme_option('footer_text'); ?>
                 </div>
             <?php } ?>
 
             <div class="contact__info_link">
-                <?php $data_social_links = carbon_get_theme_option( 'social_links' ); ?>
-                <?php if ( ! empty( $data_social_links ) ): ?>
-                    <?php foreach ( $data_social_links as $item_link ): ?>
+                <?php $data_social_links = carbon_get_theme_option('social_links'); ?>
+                <?php if (!empty($data_social_links)): ?>
+                    <?php foreach ($data_social_links as $item_link): ?>
                         <a href="<?php echo $item_link['social_link'] ?>" target="_blank"><span class="icon <?php echo $item_link['fonts_code'] ?>"></span></a>
                     <?php endforeach; ?>
                 <?php endif; ?>
             </div>
         </div>
         <div class="contact__form">
-            <?php echo do_shortcode('[contact-form-7 id="23" title="Контактная форма 2"]');?>
+            <?php echo do_shortcode('[contact-form-7 id="23" title="Контактная форма 2"]'); ?>
             <!--
             <form>
                 <div class="form-group-line">
@@ -61,7 +61,7 @@
     </div>
     <div class="copyright">
         <div class="copyright__text">
-            Copyright &copy; 2018 Denis Abdullin – deab.ru
+            Copyright &copy; <?php echo date("Y") ?> Developer Valentin Gorbatenko – Design Denis Abdullin <a href="https://deab.ru/">deab.ru</a>
         </div>
         <div class="copyright__link">
             <a href="#">Invoicing</a>
@@ -84,7 +84,7 @@
 </div>
 <div class="to__top">
     <div class="menu-item"><a href="#Top">
-            <img src="<?php echo get_template_directory_uri();?>/assets/img/top.svg" alt="img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top.svg" alt="img">
         </a>
     </div>
 </div>

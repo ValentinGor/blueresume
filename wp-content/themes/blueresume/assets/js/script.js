@@ -52,7 +52,7 @@ window.addEventListener('scroll', function () {
 });
 
 // Плавный скролл
-$('.menu-item a').on('click', function() {
+$('.menu-item a').on('click', function () {
 
     let href = $(this).attr('href');
 
